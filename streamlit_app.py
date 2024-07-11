@@ -126,14 +126,14 @@ with st.container():
     
     # Transform input data
     sc_X_new = sc_X.transform(df)
-    st.write('sc_X_new: ', sc_X_new)
+    
     
     # Predict and inverse transform
     y_new = model.predict(sc_X_new)
     y_new_re = sc_Y.inverse_transform(y_new.reshape(-1,1))
     
-    st.write('y_new: ', y_new)
-    st.write('y_new_re: ', y_new_re)
+    
+    
     if y_new_re < threshold:
         st.warning('Khách hàng không có trải nghiệm tốt về dịch vụ ngân hàng số')
     else:
