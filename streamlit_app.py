@@ -41,7 +41,7 @@ set_background('15.jpg')
 
 
 with st.container():
-   st.markdown("**<span style='color:red;'>Đề tài “Ứng dụng phương pháp SEM-NEURAL NETWORK để xây dựng mô hình dự báo trải nghiệm khách hàng về dịch vụ ngân hàng số tại các Ngân hàng thương mại Việt Nam” - TS. LÊ HOÀNG ANH </span>**", unsafe_allow_html=True)
+   st.markdown("**<span style='color:green;'>Đề tài “Ứng dụng phương pháp SEM-NEURAL NETWORK để xây dựng mô hình dự báo trải nghiệm khách hàng về dịch vụ ngân hàng số tại các Ngân hàng thương mại Việt Nam” - TS. LÊ HOÀNG ANH </span>**", unsafe_allow_html=True)
     
    st.markdown("**<span style='color:red;'>PHẦN I: QUÝ KHÁCH VUI LÒNG CHO BIẾT TRẢI NGHIỆM CỦA MÌNH VỀ DỊCH VỤ NGÂN HÀNG SỐ CỦA CHÚNG TÔI</span>**", unsafe_allow_html=True)
     
