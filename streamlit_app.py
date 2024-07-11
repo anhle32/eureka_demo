@@ -40,9 +40,9 @@ def set_background(png_file):
 set_background('image1.jpg')
 
 with st.container():
-   st.markdown("**<span style='color:red;'>QUÝ KHÁCH VUI LÒNG CHO BIẾT TRẢI NGHIỆM CỦA MÌNH VỀ DỊCH VỤ NGÂN HÀNG SỐ CỦA CHÚNG TÔI</span>**", unsafe_allow_html=True)
+   st.markdown("**<span style='color:red;'>PHẦN I: QUÝ KHÁCH VUI LÒNG CHO BIẾT TRẢI NGHIỆM CỦA MÌNH VỀ DỊCH VỤ NGÂN HÀNG SỐ CỦA CHÚNG TÔI</span>**", unsafe_allow_html=True)
     
-   st.markdown("**<span style='color:red;'>NHẬN THỨC TIỆN LỢI</span>**", unsafe_allow_html=True)
+   st.markdown("**<span style='color:red;'>1. NHẬN THỨC TIỆN LỢI</span>**", unsafe_allow_html=True)
    st.markdown('<span style="color:blue;">Tôi nhận thấy việc sử dụng dịch vụ ngân hàng số làm cho các giao dịch ngân hàng trở nên dễ dàng hơn</span>', unsafe_allow_html=True)
    STL1 = st.radio('', values, horizontal=True, key='STL1', format_func=radio_format_func)
    st.markdown('<span style="color:blue;">Tôi nhận thấy sử dụng dịch vụ ngân hàng số giúp tôi kiểm soát tài chính hiệu quả</span>', unsafe_allow_html=True)
@@ -52,7 +52,7 @@ with st.container():
    st.markdown('<span style="color:blue;">Tôi nhận thấy sử dụng dịch vụ ngân hàng số giúp tôi có quyền kiểm soát và linh hoạt hơn</span>', unsafe_allow_html=True)
    STL4 = st.radio('', values, horizontal=True, key='STL4')
    
-   st.markdown("**<span style='color:red;'>CHẤT LƯỢNG CHỨC NĂNG</span>**", unsafe_allow_html=True)
+   st.markdown("**<span style='color:red;'>2. CHẤT LƯỢNG CHỨC NĂNG</span>**", unsafe_allow_html=True)
    st.markdown('<span style="color:blue;">Tôi nhận thấy dịch vụ ngân hàng số có tính linh hoạt về thời gian và không gian</span>', unsafe_allow_html=True)
    CLC1 = st.radio('', values, horizontal=True, key='CLC1')
    st.markdown('<span style="color:blue;">Tôi nhận thấy dịch vụ ngân hàng số có quy trình xử lí giao dịch hiệu quả</span>', unsafe_allow_html=True)
@@ -62,7 +62,7 @@ with st.container():
    st.markdown('<span style="color:blue;">Tôi nhận thấy dịch vụ ngân hàng số có hệ thống hỗ trợ và tư vấn chuyên nghiệp</span>', unsafe_allow_html=True)
    CLC4 = st.radio('', values, horizontal=True, key='CLC4')
    
-   st.markdown("**<span style='color:red;'>CHẤT LƯỢNG DỊCH VỤ</span>**", unsafe_allow_html=True)
+   st.markdown("**<span style='color:red;'>3. CHẤT LƯỢNG DỊCH VỤ</span>**", unsafe_allow_html=True)
    st.markdown('<span style="color:blue;">Tôi nhận thấy dịch vụ ngân hàng số đáp ứng được tất cả nhu cầu, nhiều chức năng ứng dụng đa dạng</span>', unsafe_allow_html=True)
    CDV1 = st.radio('', values, horizontal=True, key='CDV1')
    st.markdown('<span style="color:blue;">Tôi nhận thấy dịch vụ ngân hàng số có cơ sở vật chất và phương tiện kỹ thuật hiện đại, sạch sẽ</span>', unsafe_allow_html=True)
@@ -72,7 +72,7 @@ with st.container():
    st.markdown('<span style="color:blue;">Tôi nhận thấy ngân hàng thực hiện cung cấp dịch vụ ngân hàng số như đã truyền thông</span>', unsafe_allow_html=True)
    CDV4 = st.radio('', values, horizontal=True, key='CDV4')
    
-   st.markdown("**<span style='color:red;'>NHẬN THỨC THƯƠNG HIỆU</span>**", unsafe_allow_html=True)
+   st.markdown("**<span style='color:red;'>4. NHẬN THỨC THƯƠNG HIỆU</span>**", unsafe_allow_html=True)
    st.markdown('<span style="color:blue;">Tôi thường có ấn tượng tốt về thương hiệu dịch vụ ngân hàng số của ngân hàng này</span>', unsafe_allow_html=True)
    TH1 = st.radio('', values, horizontal=True, key='TH1')
    st.markdown('<span style="color:blue;">Theo tôi những người khác cũng có ấn tượng tốt về thương hiệu dịch vụ ngân hàng số của ngân hàng này</span>', unsafe_allow_html=True)
@@ -82,7 +82,7 @@ with st.container():
    st.markdown('<span style="color:blue;">Chất lượng của thương hiệu dịch vụ ngân hàng số của ngân hàng này đạt chuẩn giúp tôi yên tâm sử dụng dịch vụ</span>', unsafe_allow_html=True)
    TH4 = st.radio('', values, horizontal=True, key='TH4')
    
-   st.markdown("**<span style='color:red;'>NHẬN THỨC AN TOÀN</span>**", unsafe_allow_html=True)
+   st.markdown("**<span style='color:red;'>5. NHẬN THỨC AN TOÀN</span>**", unsafe_allow_html=True)
    st.markdown('<span style="color:blue;">Tôi tin tưởng dịch vụ ngân hàng số đảm bảo tính riêng tư</span>', unsafe_allow_html=True)
    RR1 = st.radio('', values, horizontal=True, key='RR1')
    st.markdown('<span style="color:blue;">Tôi cho rằng người khác không thể giả mạo thông tin của tôi</span>', unsafe_allow_html=True)
@@ -92,7 +92,7 @@ with st.container():
    st.markdown('<span style="color:blue;">Tôi nhận thấy không có gian lận thất thoát tiền khi sử dụng dịch vụ ngân hàng số</span>', unsafe_allow_html=True)
    RR4 = st.radio('', values, horizontal=True, key='RR4')
    
-   st.markdown("**<span style='color:red;'>KHẢ NĂNG SỬ DỤNG</span>**", unsafe_allow_html=True)
+   st.markdown("**<span style='color:red;'>6. KHẢ NĂNG SỬ DỤNG</span>**", unsafe_allow_html=True)
    st.markdown('<span style="color:blue;">Tôi nhận thấy học cách sử dụng dịch vụ ngân hàng số rất dễ dàng</span>', unsafe_allow_html=True)
    KNSD1 = st.radio('', values, horizontal=True, key='KNSD1')
    st.markdown('<span style="color:blue;">Tôi nhận thấy các thao tác thực hiện trên dịch vụ ngân hàng số rõ ràng, dễ hiểu</span>', unsafe_allow_html=True)
@@ -103,7 +103,7 @@ with st.container():
    KNSD4 = st.radio('', values, horizontal=True, key='KNSD4')
 
 with st.container():
-    st.subheader('Dự báo kết quả với ANN')
+    st.markdown("**<span style='color:red;'>PHẦN II: KẾT QUẢ DỰ BÁO TRẢI NGHIỆM CỦA KHÁCH HÀNG VỀ DỊCH VỤ NGÂN HÀNG SỐ</span>**", unsafe_allow_html=True)
     
     STL = np.array([STL1, STL2, STL3, STL4], dtype='float64').mean()
     CLC = np.array([CLC1, CLC2, CLC3, CLC4], dtype='float64').mean()
