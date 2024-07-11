@@ -1,5 +1,3 @@
-# -*- coding: utf-8 -*-
-
 import streamlit as st
 import pickle
 import pandas as pd
@@ -26,6 +24,13 @@ def set_background(png_file):
     .stApp {
     background-image: url("data:image/png;base64,%s");
     background-size: cover;
+    }
+    .stRadio > div {
+        display: flex;
+        align-items: center;
+    }
+    .stRadio > div > label {
+        margin-right: 10px;
     }
     </style>
     ''' % bin_str
@@ -95,7 +100,7 @@ with st.container():
    KNSD3 = st.radio('', values, horizontal=True, key='KNSD3')
    st.markdown('<span style="color:blue;">Tôi nhận thấy các thao tác được thiết kế để sử dụng dịch vụ ngân hàng số rất gần gũi và quen thuộc với các ứng dụng ngày nay</span>', unsafe_allow_html=True)
    KNSD4 = st.radio('', values, horizontal=True, key='KNSD4')
-   
+
 with st.container():
     st.subheader('Dự báo kết quả với ANN')
     
