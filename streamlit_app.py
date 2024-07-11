@@ -23,7 +23,7 @@ def set_background(png_file):
     <style>
     .stApp {
         background: url("data:image/png;base64,%s") no-repeat right bottom;
-        background-size: 200px 200px; /* Adjust the size of the background image */
+        background-size: 400px 400px; /* Adjust the size of the background image */
     }
     .stRadio > div {
         display: flex;
