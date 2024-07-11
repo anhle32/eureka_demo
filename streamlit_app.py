@@ -25,6 +25,9 @@ def set_background(png_file):
         background: url("data:image/png;base64,%s") no-repeat center top;
         background-size: 200px 200px; /* Adjust the size of the background image */
     }
+    .stApp > header {
+        padding-top: 220px; /* Adjust this value based on the size of the background image */
+    }
     .stRadio > div {
         display: flex;
         align-items: center;
@@ -36,6 +39,7 @@ def set_background(png_file):
     </style>
     ''' % bin_str
     st.markdown(page_bg_img, unsafe_allow_html=True)
+
 
 set_background('df.jpg')
 
