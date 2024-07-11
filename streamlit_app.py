@@ -17,31 +17,27 @@ def get_base64(bin_file):
         data = f.read()
     return base64.b64encode(data).decode()
 
-def set_background(left_image_file, right_image_file):
-    left_image_str = get_base64(left_image_file)
-    right_image_str = get_base64(right_image_file)
-    page_bg_img = f'''
+def set_background(png_file):
+    bin_str = get_base64(png_file)
+    page_bg_img = '''
     <style>
-    .stApp {{
-        background-image: url("data:image/png;base64,{left_image_str}"), url("data:image/png;base64,{right_image_str}");
-        background-position: left bottom, right bottom;
-        background-repeat: no-repeat, no-repeat;
-        background-size: 200px 200px, 200px 200px;
-    }}
-    .stRadio > div {{
+    .stApp {
+        background: url("data:image/png;base64,%s") no-repeat right bottom;
+        background-size: 400px 800px; /* Adjust the size of the background image */
+    }
+    .stRadio > div {
         display: flex;
         align-items: center;
-        margin-top: -20px;  /* Reduce margin to bring radio buttons closer */
-    }}
-    .stRadio > div > label {{
+        margin-top: -40px;  /* Reduce margin to bring radio buttons closer */
+    }
+    .stRadio > div > label {
         margin-right: 10px;
-    }}
+    }
     </style>
-    '''
+    ''' % bin_str
     st.markdown(page_bg_img, unsafe_allow_html=True)
 
-# Set the backgrounds
-set_background('/mnt/data/df.jpg', '/mnt/data/image1.png')
+set_background('df.jpg')
 
 with st.container():
    st.markdown("**<span style='color:red;'>PHẦN I: QUÝ KHÁCH VUI LÒNG CHO BIẾT TRẢI NGHIỆM CỦA MÌNH VỀ DỊCH VỤ NGÂN HÀNG SỐ CỦA CHÚNG TÔI</span>**", unsafe_allow_html=True)
