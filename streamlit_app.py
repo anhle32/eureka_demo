@@ -22,7 +22,7 @@ def set_background(png_file):
     page_bg_img = '''
     <style>
     .stApp {
-        background: url("data:image/png;base64,%s") no-repeat right bottom;
+        background: url("data:image/png;base64,%s") no-repeat center bottom;
         background-size: 600px 800px; /* Adjust the size of the background image */
     }
     .stRadio > div {
@@ -41,6 +41,8 @@ set_background('15.jpg')
 
 
 with st.container():
+   st.markdown("**<span style='color:red;'>Đề tài “Ứng dụng phương pháp SEM-Neural Network để xây dựng mô hình dự báo trải nghiệm khách hàng về dịch vụ ngân hàng số tại các Ngân hàng thương mại Việt Nam” - TS. LÊ HOÀNG ANH </span>**", unsafe_allow_html=True)
+    
    st.markdown("**<span style='color:red;'>PHẦN I: QUÝ KHÁCH VUI LÒNG CHO BIẾT TRẢI NGHIỆM CỦA MÌNH VỀ DỊCH VỤ NGÂN HÀNG SỐ CỦA CHÚNG TÔI</span>**", unsafe_allow_html=True)
     
    st.markdown("**<span style='color:red;'>1. NHẬN THỨC TIỆN LỢI</span>**", unsafe_allow_html=True)
