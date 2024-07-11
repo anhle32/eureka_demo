@@ -22,12 +22,13 @@ def set_background(png_file):
     page_bg_img = '''
     <style>
     .stApp {
-    background-image: url("data:image/png;base64,%s");
-    background-size: cover;
+        background-image: url("data:image/png;base64,%s");
+        background-size: cover;
     }
     .stRadio > div {
         display: flex;
         align-items: center;
+        margin-bottom: -20px;  /* Reduce margin to bring radio buttons closer */
     }
     .stRadio > div > label {
         margin-right: 10px;
