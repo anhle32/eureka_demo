@@ -17,32 +17,29 @@ def get_base64(bin_file):
         data = f.read()
     return base64.b64encode(data).decode()
 
-def set_background(png_file, position="right bottom", size="200px 200px"):
-    bin_str = get_base64(png_file)
+def set_background(png_file_left, png_file_right):
+    bin_str_left = get_base64(png_file_left)
+    bin_str_right = get_base64(png_file_right)
     page_bg_img = '''
     <style>
     .stApp {
-        background: url("data:image/png;base64,%s") no-repeat %s;
-        background-size: %s; /* Adjust the size of the background image */
+        background: linear-gradient(to bottom right, transparent 49%, white 49%), url("data:image/png;base64,%s") no-repeat left bottom, url("data:image/png;base64,%s") no-repeat right bottom;
+        background-size: 200px 200px, 200px 200px; /* Adjust the size of the background images */
     }
     .stRadio > div {
         display: flex;
         align-items: center;
-        margin-top: -20px;  /* Reduce margin to bring radio buttons closer */
+        margin-top: -40px;  /* Reduce margin to bring radio buttons closer */
     }
     .stRadio > div > label {
         margin-right: 10px;
     }
     </style>
-    ''' % (bin_str, position, size)
+    ''' % (bin_str_left, bin_str_right)
     st.markdown(page_bg_img, unsafe_allow_html=True)
 
-# Set the right bottom background image
-set_background('image1.jpg', position="right bottom", size="700px 600px")
-
-# Set the left bottom background image
-set_background('df.jpg', position="left bottom", size="400px 600px")
-
+# Set the backgrounds
+set_background('df.jpg', 'image1.jpg')
 
 with st.container():
    st.markdown("**<span style='color:red;'>PHẦN I: QUÝ KHÁCH VUI LÒNG CHO BIẾT TRẢI NGHIỆM CỦA MÌNH VỀ DỊCH VỤ NGÂN HÀNG SỐ CỦA CHÚNG TÔI</span>**", unsafe_allow_html=True)
