@@ -41,7 +41,7 @@ def set_background(png_file):
     st.markdown(page_bg_img, unsafe_allow_html=True)
 
 
-set_background('/mnt/data/df.jpg')
+set_background('df.jpg')
 
 
 with st.container():
