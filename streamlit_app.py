@@ -41,7 +41,8 @@ def set_background(png_file):
     st.markdown(page_bg_img, unsafe_allow_html=True)
 
 
-set_background('df.jpg')
+set_background('/mnt/data/df.jpg')
+
 
 with st.container():
    st.markdown("**<span style='color:red;'>PHẦN I: QUÝ KHÁCH VUI LÒNG CHO BIẾT TRẢI NGHIỆM CỦA MÌNH VỀ DỊCH VỤ NGÂN HÀNG SỐ CỦA CHÚNG TÔI</span>**", unsafe_allow_html=True)
