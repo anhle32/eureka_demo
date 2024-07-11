@@ -28,7 +28,7 @@ def set_background(png_file):
     .stRadio > div {
         display: flex;
         align-items: center;
-        margin-top: -20px;  /* Reduce margin to bring radio buttons closer */
+        margin-top: -40px;  /* Reduce margin to bring radio buttons closer */
     }
     .stRadio > div > label {
         margin-right: 10px;
