@@ -38,12 +38,11 @@ def set_background(png_file):
 set_background('image1.jpg')
 
 with st.container():
-   st.write("Chọn các giá trị")
-
-   st.subheader('NHẬN THỨC TIỆN LỢI')
-   
-   STL1 = st.radio('Tôi nhận thấy việc sử dụng dịch vụ ngân hàng số làm cho các giao dịch ngân hàng trở nên dễ dàng hơn', values, horizontal=True, key= 'STL1', format_func = radio_format_func)
-   STL2 = st.radio('Tôi nhận thấy sử dụng dịch vụ ngân hàng số giúp tôi kiểm soát tài chính hiệu quả', values, horizontal=True, key= 'STL2')
+   st.markdown("**<span style='color:red;'>QUÝ KHÁCH VUI LÒNG CHO BIẾT TRẢI NGHIỆM CỦA MÌNH VỀ DỊCH VỤ NGÂN HÀNG SỐ CỦA CHÚNG TÔI</span>**", unsafe_allow_html=True)
+    
+   st.markdown("**<span style='color:red;'>NHẬN THỨC TIỆN LỢI</span>**", unsafe_allow_html=True)
+   STL1 = st.radio('<span style="color:blue;">Tôi nhận thấy việc sử dụng dịch vụ ngân hàng số làm cho các giao dịch ngân hàng trở nên dễ dàng hơn</span>', values, horizontal=True, key= 'STL1', format_func = radio_format_func)
+   STL2 = st.radio('<span style="color:blue;">Tôi nhận thấy sử dụng dịch vụ ngân hàng số giúp tôi kiểm soát tài chính hiệu quả</span>', values, horizontal=True, key= 'STL2')
    STL3 = st.radio('Tôi nhận thấy sử dụng dịch vụ ngân hàng số giúp tôi tiết kiệm thời gian', values, horizontal=True, key= 'STL3')
    STL4 = st.radio('Tôi nhận thấy sử dụng dịch vụ ngân hàng số giúp tôi có quyền kiểm soát và linh hoạt hơn', values, horizontal=True, key= 'STL4')
    
