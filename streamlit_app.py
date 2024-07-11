@@ -37,7 +37,7 @@ def set_background(png_file):
     ''' % bin_str
     st.markdown(page_bg_img, unsafe_allow_html=True)
 
-set_background('image1.jpg')
+set_background()
 
 
 with st.container():
